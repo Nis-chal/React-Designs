@@ -3,4 +3,4 @@
 
 ![MouseSlider!](./src/assets/images/mouseslider.gif)
 
-<img src="./src/assets/images/mouseslider.gif" alt="" width="100%"/> 
+<img src="./src/assets/images/mouseslider.gif" alt="" width="100%"></img> 
