@@ -1,13 +1,16 @@
-
-
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { HomePage } from "./client";
+import { MouseMove } from "./client/design";
 
 function App() {
   return (
     <Router>
-      <Routes >
-        <Route path="/" element={<HomePage />} />
+      <Routes>
+        <Route path="/">
+          <Route index element={<HomePage />} />
+          <Route path="1" element={<MouseMove />} />
+          <Route />
+        </Route>
       </Routes>
     </Router>
   );
