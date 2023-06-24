@@ -14,6 +14,8 @@ const Wrapper = styled.div`
     color: white;
     font-size: clamp(2rem, 1.9rem + 6vw, 10rem);
     z-index: 1;
+    font-weight: bolder;
+    mix-blend-mode: difference;
   }
 
   #gallery {
@@ -61,7 +63,6 @@ const Wrapper = styled.div`
     width: 14%;
     left: 42%;
     top: 12%;
-    z-index: 0;
   }
 
   .tile:nth-child(3) {
@@ -152,9 +153,10 @@ const MouseMove = () => {
 
   return (
     <Wrapper className="" onMouseMove={movemouse} ref={boxRef}>
-   
-        <div className="text">Pixel</div>
-   
+      <em>
+        <i className="text">Pixel</i>
+      </em>
+
       <div id="gallery" ref={galleryRef}>
         <div className="tile">
           <img
