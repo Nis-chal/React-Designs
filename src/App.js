@@ -1,5 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { HomePage } from "./client";
+import { HomePage, PostEdit } from "./client";
 import { MouseMove } from "./client/design";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
         <Route path="/">
           <Route index element={<HomePage />} />
           <Route path="1" element={<MouseMove />} />
+          <Route path="2" element={<PostEdit />} />
           <Route />
         </Route>
       </Routes>

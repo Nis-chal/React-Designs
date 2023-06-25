@@ -1,3 +1,3 @@
 import HomePage from "./homepage/HomePage";
-
-export { HomePage };
+import PostEdit from "./postEdit/PostEdit";
+export { HomePage, PostEdit };
