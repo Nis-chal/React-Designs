@@ -13,6 +13,6 @@
 
 <h1>Gradient Page</h1>
 
-<img src="./src/assets/images/screenshot/neonanimation.gif" alt="" width="35%" ></img>
-<img src="./src/assets/images/screenshot/landingpage.gif" alt=""  width="35%" ></img>
+<img src="./src/assets/images/screenshot/neonanimation.gif" alt="" width="45%" ></img>
+<img src="./src/assets/images/screenshot/landingpage.gif" alt=""  width="45%" ></img>
 <img src="./src/assets/images/screenshot/landingfullpage.png" alt=""  width="30%" ></img>
