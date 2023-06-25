@@ -344,7 +344,7 @@ const PostBox = React.memo(
     const desc =
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, culpa, tenetur repudiandae dolor cupiditate perferendis, mollitia placeat sit ad dolore quasi dolores corporis iste autem eius numquam quia nostrum delectus!";
     return (
-      <Wrapper>
+    <Wrapper>
         <div className={!postState.isDelete ? "video-post " : "d-none"}>
           <div className="post-content">
             {/* absolute */}
