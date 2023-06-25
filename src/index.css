@@ -4,9 +4,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+ @font-face {
+    font-family: "MADE Soulmaze Outline Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("MADE Soulmaze Outline Regular"),
+      url("./assets/fonts/MADE\ Soulmaze\ PERSONAL\ USE.woff")
+        format("woff");
+  }
+
+ ::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+    background-color: black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #00d8ff;
+    border-radius: 10px;
+  }
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -19,4 +42,130 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+
+
+
+
+
+.btn-getstarted {
+  margin-top: 20px;
+  white-space: nowrap;
+  justify-content: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: normal;
+  font-weight: bolder;
+
+  align-items: center;
+
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: transparent;
+
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--secondary-500);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.btn2 {
+  display: inline-block;
+  padding: var(--btn-padding);
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 300ms ease;
+  font-size: 0.9rem;
+  border: none;
+}
+.btn2:hover {
+  opacity: 0.8;
+}
+
+.btn2-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* button */
+
+/* alerts */
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+  text-align: center;
+  letter-spacing: var(--letterSpacing);
+}
+
+.alertv2 {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+  text-align: center;
+  letter-spacing: var(--letterSpacing);
+}
+
+.alert-danger {
+  color: var(--red-dark);
+  background: var(--red-light);
+}
+.alert-success {
+  color: var(--green-dark);
+  background: var(--green-light);
+}
+
+
+
+
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-120px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEaseIn {
+  0% {
+    transform: translateY(-180px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
