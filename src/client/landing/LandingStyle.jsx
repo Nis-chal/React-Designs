@@ -203,7 +203,7 @@ const wrapper = styled.div`
 
   .featured {
     position: absolute;
-    bottom: 90px;
+    bottom: 50px;
     font-family: "MADE Soulmaze Outline Regular";
 
     left: 10vw;

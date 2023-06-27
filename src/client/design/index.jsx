@@ -1,3 +1,3 @@
 import MouseMove from "./mouseEffect/MouseMove";
-
-export { MouseMove };
+import IntelligentMouse from "./intelligentmouse/IntelligentMouse"
+export { MouseMove, IntelligentMouse };
