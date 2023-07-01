@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   .box {
-    background-color: rgb(20, 20, 20);
+    background-color: #1b0101;
     height: 100vh;
     margin: 0px;
 
@@ -24,7 +24,8 @@ const Wrapper = styled.div`
   #trailer {
     height: 20px;
     width: 20px;
-    background-color: white;
+    background-color: #fff9f9ad;
+    backdrop-filter: blur(1px);
     border-radius: 20px;
 
     position: fixed;
@@ -142,7 +143,6 @@ const IntelligentMouse = () => {
   };
 
   const getTrailerClass = (type) => {
-    console.log(type);
     switch (type) {
       case "video":
         return <AiFillPlayCircle />;
@@ -154,8 +154,6 @@ const IntelligentMouse = () => {
   const onmousemove = (e) => {
     const interactable = e.target.closest(".interactable"),
       interacting = interactable !== null;
-
-    console.log(interactable);
 
     animateTrailer(e, interacting);
 
@@ -184,7 +182,25 @@ const IntelligentMouse = () => {
           data-type="link"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1603039548080-d34896eb2e9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80)",
+              "url(https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+          }}
+        ></div>
+
+        <div
+          className="interactable"
+          data-type="video"
+          style={{
+            backgroundImage:
+              "url(https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+          }}
+        ></div>
+
+        <div
+          className="interactable"
+          data-type="link"
+          style={{
+            backgroundImage:
+              "url(https://images.unsplash.com/photo-1578323851363-cf6a1a6afbb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=478&q=80",
           }}
         ></div>
         <div
