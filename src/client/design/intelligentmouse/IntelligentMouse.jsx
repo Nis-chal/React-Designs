@@ -125,9 +125,7 @@ const Wrapper = styled.div`
 const IntelligentMouse = () => {
   const mouseRef = React.useRef();
   const boxRef = React.useRef();
-  const [mouseicon, setIcon] = React.useState(
-    <FiArrowUpRight id="trailer-icon" />
-  );
+  const [mouseicon, setIcon] = React.useState(<FiArrowUpRight />);
 
   const animateTrailer = (e, interacting) => {
     const x = e.clientX - mouseRef.current.offsetWidth / 2,
@@ -144,11 +142,12 @@ const IntelligentMouse = () => {
   };
 
   const getTrailerClass = (type) => {
+    console.log(type);
     switch (type) {
       case "video":
-        return <AiFillPlayCircle id="trailer-icon" />;
+        return <AiFillPlayCircle />;
       default:
-        return <FiArrowUpRight id="trailer-icon" />;
+        return <FiArrowUpRight />;
     }
   };
 
@@ -185,7 +184,7 @@ const IntelligentMouse = () => {
           data-type="link"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1657739774592-14c8f97eaece?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60)",
+              "url(https://images.unsplash.com/photo-1603039548080-d34896eb2e9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80)",
           }}
         ></div>
         <div
@@ -193,28 +192,18 @@ const IntelligentMouse = () => {
           data-type="video"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1657779582398-a13b5896ff19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60)",
+              "url(https://images.unsplash.com/photo-1604124532179-118d050e5f35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80)",
           }}
         ></div>
         <a
           rel="noreferrer"
           id="source-link"
           className="meta-link"
-          href="https://monopo.vn"
+          href="https://github.com/Nis-chal/React-Designs"
           target="_blank"
         >
           <FaLink className="fa-solid fa-link" />
           <span>Source</span>
-        </a>
-        <a
-          rel="noreferrer"
-          id="yt-link"
-          className="meta-link"
-          href="https://youtu.be/CZIJKkwc8l8"
-          target="_blank"
-        >
-          <RiYoutubeFill className="fa-brands fa-youtube" />
-          <span>3.5 min tutorial</span>
         </a>
       </div>
     </Wrapper>
